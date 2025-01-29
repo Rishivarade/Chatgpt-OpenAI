@@ -1,0 +1,122 @@
+/* Container styling */
+.div {
+  margin-top: 10px ;
+  margin-bottom: 10px; 
+}
+.chatlist {
+    width: 300px;
+    background-color: #4ef097;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    margin-top: 30px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Title styling */
+  .chatlist .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #0768c4;
+  
+    display: block;
+    text-transform: uppercase;
+  }
+  
+  /* Link styling */
+  .chatlist a {
+    display: block;
+    text-decoration: none;
+    color: #060707;
+    padding: 8px ;
+    font-size: 14px;
+    transition: all 0.3s ease;
+  }
+  
+  .chatlist a:hover {
+    color: #920aec;
+    background-color: #0ee971;
+    border-radius: 4px;
+  }
+  
+  /* Divider */
+  .chatlist hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 15px 0;
+  }
+  
+  /* Recent Chats list styling */
+  .chatlist .list a {
+    color: #333;
+    font-size: 14px;
+    border-bottom: 1px solid #eee;
+    padding: 6px;
+  }
+  
+  .chatlist .list a:hover {
+    color: #b46525;
+    background-color: #0eeb7c;
+    border-radius: 4px;
+  }
+  
+  /* Upgrade section */
+  .chatlist .upgrade {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    background-color: #007bff;
+    border-radius: 8px;
+    color: #fff;
+  }
+  
+  .chatlist .upgrade img {
+    width: 30px;
+    height: 30px;
+
+    border-radius: 50%;
+    background-color: #585353;
+    object-fit: cover;
+  }
+  
+  .chatlist .upgrade .texts {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .chatlist .upgrade .texts span:first-child {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .chatlist .upgrade .texts span:last-child {
+    font-size: 12px;
+    opacity: 0.9;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .chatlist {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .chatlist .title {
+      font-size: 16px;
+    }
+  
+    .chatlist a {
+      font-size: 13px;
+    }
+  
+    .chatlist .upgrade img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .chatlist .upgrade .texts span:first-child {
+      font-size: 14px;
+    }
+  }
+  

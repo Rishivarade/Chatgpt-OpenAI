@@ -1,0 +1,137 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+
+  /* Loading Indicator */
+  .loading {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #0078d4;
+    margin: 10px 0;
+  }
+  
+  /* Chat Message Styles */
+  .message {
+    padding: 25px;
+    margin-left: auto;
+    background-color: #5a5959;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+  
+  .message.user {
+    background-color: #0078d4;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  .message code {
+    background-color: #20275c;
+    color: rgb(190, 209, 216);
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .message pre {
+    background-color: #171718;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  /* Image Styles */
+  .IKImage {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Styles */
+  .newForm {
+    display: flex;
+    align-items: center;
+    width: 45%;
+    position: fixed;
+    bottom: 0.5%;
+    right: 15%;
+    gap: 10px;  
+    padding: 10px;
+    background-color: #71a0df;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .newForm input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff;
+    outline: none;
+  }
+  
+  .newForm input[type="text"]::placeholder {
+    color: #232427;
+  }
+  
+  .newForm button {
+    background-color: #020202;
+    border: none;
+    border-radius: 50%;
+    padding: 0px 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .newForm button img {
+    margin-bottom: 5px;
+   
+  }
+  
+  .newForm button:hover {
+    background-color: #bcbcd1;
+  }
+  
+  /* Upload Button Placeholder */
+  #file {
+    display: none;
+  }
+  
+  /* Chat Bottom */
+  .endChat {
+    height: 1px;
+    visibility: hidden;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .message {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  
+    .newForm {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .newForm button {
+      width: 100%;
+    }
+  }
+  
